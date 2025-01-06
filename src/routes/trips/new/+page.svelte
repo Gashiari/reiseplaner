@@ -236,5 +236,5 @@
 </div>
 
 <svelte:head>
-  <link rel="stylesheet" href="/src/global.css" />
+  <link rel="stylesheet" href="/global.css" />
 </svelte:head>
