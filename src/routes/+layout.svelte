@@ -16,13 +16,13 @@
 <nav>
   <ul class="navbar">
     <li>
-      <a href="/" class:active={currentPath === '/'}>Reiseplaner</a>
+      <a href="/">Reiseplaner</a>
     </li>
     <li>
-      <a href="/trips" class:active={currentPath.startsWith('/trips') && currentPath !== '/trips/new'}>Meine Reisen</a>
+      <a href="/trips">Meine Reisen</a>
     </li>
     <li>
-      <a href="/trips/new" class:active={currentPath === '/trips/new'}>Neue Reise</a>
+      <a href="/trips/new">Neue Reise</a>
     </li>
   </ul>
 </nav>

@@ -38,11 +38,6 @@ nav ul.navbar li a:hover {
   background-color: #555; /* Grau beim Hover */
 }
 
-nav ul.navbar li a.active {
-  background-color: #333; /* Dunkleres Grau für den aktiven Link */
-  font-weight: bold; /* Fettschrift für den aktiven Link */
-}
-
 /* Hauptcontainer */
 .container {
   max-width: 800px;
