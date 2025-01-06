@@ -1,0 +1,186 @@
+/* Allgemeine Styles */ 
+body {
+  background-color: #dfffd6; /* Hellgrün */
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Navigation */
+nav {
+  background-color: #000; /* Schwarz */
+  width: 100%; /* Vollständige Breite */
+  padding: 10px 20px; /* Abstand links und rechts */
+}
+
+nav ul.navbar {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Links nebeneinander */
+  gap: 20px; /* Abstand zwischen den Links */
+}
+
+nav ul.navbar li {
+  margin: 0;
+}
+
+nav ul.navbar li a {
+  color: white; /* Weiße Schrift */
+  text-decoration: none; /* Keine Unterstreichung */
+  padding: 10px 20px;
+  border-radius: 5px; /* Abgerundete Ecken */
+  font-size: 16px;
+  background-color: transparent; /* Hintergrund standardmäßig transparent */
+  transition: background-color 0.3s ease; /* Weicher Übergang */
+}
+
+nav ul.navbar li a:hover {
+  background-color: #555; /* Grau beim Hover */
+}
+
+nav ul.navbar li a.active {
+  background-color: #333; /* Dunkleres Grau für den aktiven Link */
+  font-weight: bold; /* Fettschrift für den aktiven Link */
+}
+
+/* Hauptcontainer */
+.container {
+  max-width: 800px;
+  text-align: center;
+  padding: 20px;
+  background-color: white; /* Weißer Hintergrund für Kontrast */
+  border-radius: 10px; /* Abgerundete Ecken */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schatten für leichte Hervorhebung */
+  margin: 20px auto; /* Zentriert den Container */
+}
+
+/* Titel */
+h1 {
+  color: black; /* Schwarze Schrift */
+  font-size: 36px; /* Große Schrift */
+  margin-bottom: 20px;
+}
+
+/* Formular */
+form {
+  display: flex;
+  flex-direction: column; /* Vertikale Ausrichtung */
+  gap: 10px; /* Abstand zwischen den Feldern */
+}
+
+form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+form input {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 14px;
+  border: none;
+  background-color: #007bff; /* Blau */
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3; /* Dunkleres Blau */
+}
+
+button.delete-button {
+  background-color: #dc3545; /* Rot */
+}
+
+button.delete-button:hover {
+  background-color: #a71d2a; /* Dunkleres Rot */
+}
+
+/* Buttons oben rechts */
+.button-group {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Karte */
+.map {
+  width: 100%;
+  height: 400px;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Zwischenziele */
+form input[type="text"] {
+  width: 100%;
+}
+
+/* Reisenliste */
+.trip-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.trip-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.trip-card h2 {
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.trip-card p {
+  margin: 5px 0;
+  color: #555;
+}
+
+button.view-trip-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button.view-trip-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    width: 90%; /* Reduziert die Breite auf mobilen Geräten */
+  }
+
+  nav ul.navbar {
+    flex-direction: column; /* Links übereinander auf kleinen Geräten */
+    align-items: flex-start;
+  }
+
+  nav ul.navbar li a {
+    width: 100%;
+    text-align: left;
+  }
+}
