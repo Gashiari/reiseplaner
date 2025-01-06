@@ -25,12 +25,12 @@ nav ul.navbar li {
 }
 
 nav ul.navbar li a {
-  color: white; /* Weiße Schrift */
+  color: white; /* Weisse Schrift */
   text-decoration: none; /* Keine Unterstreichung */
   padding: 10px 20px;
   border-radius: 5px; /* Abgerundete Ecken */
   font-size: 16px;
-  background-color: transparent; /* Hintergrund standardmäßig transparent */
+  background-color: transparent; /* Hintergrund standardmässig transparent */
   transition: background-color 0.3s ease; /* Weicher Übergang */
 }
 
@@ -48,7 +48,7 @@ nav ul.navbar li a.active {
   max-width: 800px;
   text-align: center;
   padding: 20px;
-  background-color: white; /* Weißer Hintergrund für Kontrast */
+  background-color: white; /* Weisser Hintergrund für Kontrast */
   border-radius: 10px; /* Abgerundete Ecken */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schatten für leichte Hervorhebung */
   margin: 20px auto; /* Zentriert den Container */
@@ -57,7 +57,7 @@ nav ul.navbar li a.active {
 /* Titel */
 h1 {
   color: black; /* Schwarze Schrift */
-  font-size: 36px; /* Große Schrift */
+  font-size: 36px; /* Grosse Schrift */
   margin-bottom: 20px;
 }
 
