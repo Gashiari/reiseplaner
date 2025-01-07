@@ -13,8 +13,8 @@
 </svelte:head>
 
 <!-- Navigation -->
-<nav>
-  <ul class="navbar">
+<nav style="display: flex; align-items: center; justify-content: space-between; padding: 10px;">
+  <ul class="navbar" style="display: flex; gap: 15px; margin: 0; padding: 0; list-style: none;">
     <li>
       <a href="/">Reiseplaner</a>
     </li>
@@ -25,6 +25,9 @@
       <a href="/trips/new">Neue Reise</a>
     </li>
   </ul>
+  <div style="margin-left: auto; margin-right: 20px;">
+    <img src="/img/Reiseplaner.jpg" alt="Reiseplaner Logo" style="height: 40px;" />
+  </div>
 </nav>
 
 <!-- Seiteninhalt -->
